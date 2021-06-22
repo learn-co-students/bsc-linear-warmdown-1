@@ -134,7 +134,7 @@ class InterpretIntercept(MultiChoice):
             model will ever be interpreted as the \"true\" average."""
         elif answer == 'The intercept tells us that 152 is the highest value `target` can have.':
             s = """❌ *Incorrect.* If the independent variables all have positive slopes, *and* the maximum value for the
-            independent variables is `0` then this statement would be true. This sort of circumstance is rarely seen with 
+            independent variables is `0` then this statement *could* be true. This sort of circumstance is rarely seen with 
             real world data, and thus this interpretation is largly incorrect."""
         elif answer == 'The intercept tells us that with a one unit change in the intercept, `target` will change by 152 units on average.':
             s = """❌ *Incorrect.* A one unit change in the intercept would change the intercept term to 153. 
