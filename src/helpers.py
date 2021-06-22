@@ -218,7 +218,6 @@ class StrongCorrelation(CheckBoxes):
     def collect_answers(self):
         selected_data = []
         for i in range(1, len(self.blocks[1:-2])):
-            print(i, self.blocks[i])
             if self.blocks[i].value == True:
                 selected_data.append(self.blocks[i].description)
         self.answers = selected_data
