@@ -283,40 +283,6 @@ perfect_line = None
 # Your code here
 ```
 
-
-```python
-# Import matplotlib using the standard alias
-import matplotlib.pyplot as plt
-
-# Generate model predictions
-preds = model1.predict()
-# Create a matplotlib subplot
-fig, ax = plt.subplots()
-
-# Using numpy.arange create a line that
-# begins with the minimum target value
-# and ends with the maximum target value
-perfect_line = np.arange(df.target.min(), df.target.max())
-
-# Plot the `perfect_line`
-# Set the label to the string "Perfect Fit"
-ax.plot(perfect_line, linestyle="--", color="orange", label="Perfect Fit")
-
-# Plot a scatter plot setting the xaxis to 
-# the true target values and the yaxis to
-# the predicted valued
-ax.scatter(df.target, preds, alpha=0.5)
-
-# Set the xlabel to the string "Actual Blood Pressure"
-ax.set_xlabel("Actual Blood Pressure")
-
-# Set the ylabel to the string "Predicted Blood Pressure"
-ax.set_ylabel("Predicted Blood Pressure")
-
-# Activate the legend for the matplotlib axis
-ax.legend();
-```
-
 Are you violating the linearity assumption?
 
 YOUR ANSWER HERE
@@ -355,9 +321,9 @@ In the cell below, define fit a linear regression using `bmi` and `bp` as indepe
 
 
 ```python
-formula2 = 'target~bmi + bp'
+formula2 = None
 
-model2 = smf.ols(formula2, df).fit()
+model2 = None
 model2.summary()
 ```
 
@@ -431,21 +397,6 @@ def normality(model, target):
     None
     # Plot a histogram
     None
-```
-
-
-```python
-def normality(model, target):
-    # Initialize a matplotlib subplot
-    fig, axes = plt.subplots(1,2, figsize=(20,5))
-    # Generate model predictions
-    preds = model.predict()
-    # Calculate error
-    residuals = preds - target
-    # Plot the residuals as a qqplot
-    sm.graphics.qqplot(residuals, dist=norm, line='45', fit=True, ax=axes[0])
-    # Plot a histogram
-    axes[1].hist(residuals);
 ```
 
 
