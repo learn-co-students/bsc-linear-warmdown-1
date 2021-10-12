@@ -462,7 +462,7 @@ model2.summary()
   <th>Date:</th>             <td>Tue, 12 Oct 2021</td> <th>  Prob (F-statistic):</th> <td>8.68e-49</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>14:29:55</td>     <th>  Log-Likelihood:    </th> <td> -2435.7</td>
+  <th>Time:</th>                 <td>14:43:12</td>     <th>  Log-Likelihood:    </th> <td> -2435.7</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   442</td>      <th>  AIC:               </th> <td>   4877.</td>
